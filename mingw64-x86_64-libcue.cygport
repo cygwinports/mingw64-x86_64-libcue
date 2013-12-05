@@ -1,0 +1,15 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libcue"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Cue sheet parser library for Win64 toolchain"
+DESCRIPTION="Libcue is intended to parse a so called cue sheet from a char
+string or a file pointer. For handling of the parsed data a convenient API
+is available."
+HOMEPAGE="http://sourceforge.net/projects/libcue/"
+SRC_URI="mirror://sourceforge/libcue/libcue-${VERSION}.tar.bz2"
+SRC_DIR="libcue-${VERSION}"
+PATCH_URI="1.3.0-no-undefined.patch"
